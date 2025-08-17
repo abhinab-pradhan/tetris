@@ -1,4 +1,5 @@
 #include "grid.h"
+#include "colors.h"
 #include<iostream>
 using namespace std;
 
@@ -29,17 +30,6 @@ void Grid::print(){
     }
 }
 
-std::vector<Color> Grid::getCelllColors(){
-    Color darkGrey={26,31,40,255};
-    Color green={47,230,23,255};
-    Color red={232,18,18,255};
-    Color yellow={237,234,4,255};
-    Color purple={166,0,247,255};
-    Color cyan={21,204,209,255};
-    Color blue={13,64,216,255};
-
-    return {darkGrey,green,red,yellow,purple,cyan,blue};
-}
 
 void Grid::draw(){
     for(int row=0;row<numRows;row++){
