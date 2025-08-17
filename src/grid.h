@@ -14,6 +14,5 @@ class Grid
         int numCols;
         int cellSize;
         std::vector<Color> colors;
-        std::vector<Color> getCelllColors();
 
 };
