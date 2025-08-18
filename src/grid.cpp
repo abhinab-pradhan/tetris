@@ -39,3 +39,17 @@ void Grid::draw(){
         }
     }
 }
+
+bool Grid::isCellOutSide(int row,int column){
+    if(row>= 0 && row< numRows && column>=0 &&column<numCols){
+        return false;
+    }
+    return true;
+}
+
+bool Grid::isCellEmpty(int row,int column){
+    if(grid[row][column] == 0){
+        return true;
+    }
+    return false;
+}
