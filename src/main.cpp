@@ -10,6 +10,7 @@ int main()
     //block.Move(4,3);
 
     while(WindowShouldClose() ==false){
+        game.handleInput();
         BeginDrawing();
         ClearBackground(darkBlue);
         game.Draw();
