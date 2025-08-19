@@ -93,6 +93,7 @@ void Game::LockBlock(){
     }
     currentBlock=nextBlock;
     nextBlock=GetRandomBlock();
+    grid.clearFulllRows();
 }
 
 bool Game::blockFits(){
