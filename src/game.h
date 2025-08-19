@@ -12,11 +12,14 @@ class Game{
         void moveBlockRight();
         void moveBlockDown();
         Grid grid;
+        bool gameOver;
+
     private:
         bool isBlockOutside();
         void rotateBlock();
         void LockBlock();
         bool blockFits();
+        void reset();
         std::vector<Block> blocks;
         Block currentBlock;
         Block nextBlock;
