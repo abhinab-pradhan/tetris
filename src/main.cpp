@@ -16,6 +16,8 @@ int main()
     Color darkBlue={44,44,127,255};
     InitWindow(500,620,"raylib tetris");
     SetTargetFPS(60);
+
+    Font font = LoadFontEx("Font/The Ink Prophecy.ttf",64,0,0);
     Game game=Game();
 
     //block.Move(4,3);
@@ -28,6 +30,7 @@ int main()
         //game.moveBlockDown();
         BeginDrawing();
         ClearBackground(darkBlue);
+        DrawTextEx(font,"Score",{350,15}, 24,2,WHITE);
         game.Draw();
         EndDrawing();
     }
