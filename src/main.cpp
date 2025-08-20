@@ -33,6 +33,10 @@ int main()
         ClearBackground(darkBlue);
         DrawTextEx(font,"Score",{350,15}, 24,2,WHITE);
         DrawTextEx(font,"Next",{360,175}, 24,2,WHITE);
+        if(game.gameOver){
+                    DrawTextEx(font,"GAME OVER",{320,450}, 20,2,WHITE);
+
+        }
         DrawRectangleRounded({320,55,170,60},0.3,6,lightBlue);
         DrawRectangleRounded({320,215,170,180},0.3,6,lightBlue);
         game.Draw();
