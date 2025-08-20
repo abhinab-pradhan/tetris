@@ -14,7 +14,7 @@ bool eventTrigger(double interval){
 }
 int main() 
 {
-    Color darkBlue={44,44,127,255};
+    //Color darkBlue={44,44,127,255};
     InitWindow(500,620,"raylib tetris");
     SetTargetFPS(60);
 
@@ -32,7 +32,7 @@ int main()
         BeginDrawing();
         ClearBackground(darkBlue);
         DrawTextEx(font,"Score",{350,15}, 24,2,WHITE);
-        DrawRectangleRounded({320,55,170,60},0.3,6)
+        DrawRectangleRounded({320,55,170,60},0.3,6,lightBlue);
         game.Draw();
         EndDrawing();
     }
